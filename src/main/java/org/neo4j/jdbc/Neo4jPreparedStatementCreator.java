@@ -45,7 +45,7 @@ class Neo4jPreparedStatementCreator
         int i = 1;
         boolean inQuote = false;
         boolean escaped = false;
-        StringBuffer sb = new StringBuffer( statement.length() );
+        StringBuilder sb = new StringBuilder( statement.length() );
         for ( char c : statement.toCharArray() )
         {
             if ( inQuote )
